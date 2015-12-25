@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Samih Obaid | SJSU</title>
+    <title>Random Quote Generator</title>
     <link rel="shortcut icon" href="public/img/icon.png"/>
 
     <!-- Plugin CSS -->
@@ -18,9 +19,32 @@
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
 </head>
-
 <body>
-    <section class="col-md-12">
+    <section class="col-md-12" align="center">
+        <h1 class="main-heading">Random Quote Generator</h1>
+        <p class="text-faded">Click 'Generate Random' button to see a random, inspiring quote.</p>
+        <div id="cloud"><div id="middle-cloud"></div></div>
+        <!-- <div class="col-md-8 col-md-offset-2 bg-quote-box" id="display-box" align="center">
+            <blockquote align="left">
+                <p class="quote-text" id="quote">
+                    Footsteps always follow us, whenever it is snowing. They always show us where we've been, but never where we're going.
+                </p>
+                <footer><cite title="author-name" id="author-name">Author Name</cite></footer>
+            </blockquote>
+        </div> -->
+        <div class="col-md-8 col-md-offset-2">
+            <a href="#" class="btn btn-custom">
+                <span class="fa fa-twitter">&nbsp;&nbsp;Share on Twitter</span>
+            </a>
+            <a href="#" class="btn btn-generate" id="random">
+                <span class="fa fa-random">&nbsp;&nbsp;Generate Random</span>
+            </a>
+            <a href="#" class="btn btn-custom">
+                <span class="fa fa-bullhorn">&nbsp;&nbsp;Request a Quote</span>
+            </a>
+        </div>
+    </section>
+    <section class="col-md-12 bg-land">
         
     </section>
 
@@ -29,6 +53,5 @@
     <script src="public/js/bootstrap.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="public/js/jquery.easing.min.js"></script>
-    <script>new WOW().init();</script>
 </body>
 </html>

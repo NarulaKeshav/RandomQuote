@@ -5,7 +5,7 @@ html, body {
   height: 100%;
 }
 body {
-  background: -webkit-linear-gradient(-60deg, #FFF 0%,#FFF 50%,#F5F5F5 50%,#F0F0F0 100%);
+  background: -webkit-linear-gradient(-60deg, #87CEFA 0%,#87CEFA 50%,#78C2F0 50%,#69B3E0 100%);
 }
 
 /* Link CSS Properties*/
@@ -22,7 +22,7 @@ a:hover, a:focus {
 
 /* Text CSS Properties*/
 .text-faded {
-    color: #666;
+    color: #FFF;
     line-height: 30px;
     font-size: 15px;
     font-family: Lora;
@@ -34,19 +34,111 @@ a:hover, a:focus {
     font-family: Lora;
 }
 .main-heading {
-  padding-top: 125px;
-  color: #FFF;
-  font-size: 50px !important;
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  transition: all .5s;
-  padding-bottom: 0px;
+  padding: 15px;
+  color: rgba(255,255,255,0.8);
+  font-size: 50px;
+  font-family: PT Sans;
 }
 
+/* Div and Section Tag CSS Properties */
+/*.bg-quote-box {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 40px 30px 40px 30px;
+  background: -webkit-linear-gradient(-60deg, #F0F0F0 0%,#F0F0F0 50%,#E8E8E8 50%,#E5E5E5 100%);
+  border-radius: 15px;
+}*/
+#cloud {
+  width: 650px; 
+  height: 120px;
+  background: #f2f9fe;
+  background: linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+  background: -webkit-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+  background: -moz-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+  background: -ms-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+  background: -o-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  position: relative;
+  margin: 120px auto 20px;
+  margin-top: 230px;
+}
+#cloud:after, #cloud:before {
+  content: '';
+  position: absolute;
+  background: #f2f9fe;
+  z-index: -1;
+}
+#cloud:after {
+  width: 200px; height: 200px;
+  top: -80px; left: 50px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+}
+#cloud:before {
+  width: 180px; height: 180px;
+  top: -120px; right: 50px;
+  border-radius: 200px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+}
+#middle-cloud {
+  content: '';
+  position: absolute;
+  background: #f2f9fe;
+  z-index: -1;
+  width: 300px; height: 300px;
+  top: -200px; left: 180px;
+  border-radius: 300px;
+  -webkit-border-radius: 300px;
+  -moz-border-radius: 300px;
+}
+.bg-land {
+  background: linear-gradient(#5E4025, #4A2B0F);
+  height: 100px;
+  border-top: 15px solid #399201;
+  position: absolute;
+  bottom: 0;
+}
+blockquote {
+  border-color: #888;
+}
 /* Images CSS Properties*/
 .no-drag {
   user-drag: none; 
   -moz-user-select: none;
   -webkit-user-drag: none;
   cursor: crosshair;
+}
+
+/* Button CSS Property */
+.btn-custom,
+.btn-custom:focus {
+  background: -webkit-linear-gradient(-60deg, #5FADDE 0%,#5FADDE 50%,#4F9AC9 50%,#408DBD 100%);
+  border: none;
+  color: #FFF;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 10px 15px;
+  box-shadow: 0px transparent;
+}
+.btn-custom:hover {
+  color: #FFF;
+  box-shadow: 1px 2px 3px #3683B3;
+}
+.btn-generate,
+.btn-generate:focus {
+  padding: 15px 15px;
+  background: -webkit-linear-gradient(-60deg, #FFF 0%,#FFF 50%,#F0F0F0 50%,#E5E5E5 100%);
+  color: #4F9AC9;
+  border: none;
+  margin-left: 5px;
+  margin-right: 5px;
+  box-shadow: 0px 4px 5px #408DBD;
+}
+.btn-generate:hover {
+  color: #3683B3;
+  box-shadow: 4px 4px 5px #408DBD;
 }
