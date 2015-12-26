@@ -13,7 +13,7 @@ The JavaScript file `creative.js` has a array called quotes that contains a quot
 ```
 ["This is some quote.::Author Name"]
 ```
-I used `Math.floor(Math.random() * arr.length)` so I could get index for one of the quotes in the array. Then I split the array into two subarray, the first index containing the `quote` and the second index with the `author name`. Something like this:
+I used `Math.floor(Math.random() * arr.length)` so I could get index for one of the quotes in the array. Then I split the array into two subarray by splitting them using `::`, the first index containing the `quote` and the second index with the `author name`. Something like this:
 ```
 ["This is some quote.", "Author Name"]
 ```
