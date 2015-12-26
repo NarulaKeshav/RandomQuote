@@ -271,4 +271,11 @@ cite {
     box-shadow: 0px 4px 5px #408DBD;
     outline: none;
   }
+  .main-heading {
+    padding: 15px;
+    color: #FFF;
+    font-size: 30px;
+    font-family: PT Sans;
+    text-shadow: 2px 3px 10px #4390C0;
+  }
 }
