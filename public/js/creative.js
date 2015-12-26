@@ -24,8 +24,8 @@ $(document).ready(function() {
 
         var random_quote_index = quotes[Math.floor(Math.random() * quotes.length)];
         var split_to_get_author = random_quote_index.split("::");
-        $("#quote-text").html(split_to_get_author[0]).fadeIn(1000);
-        $("#author-name").html(split_to_get_author[1]).fadeIn(1000);
+        $("#quote-text").html(split_to_get_author[0]);
+        $("#author-name").html(split_to_get_author[1]);
     }
 
     $('#random').click(function() {
