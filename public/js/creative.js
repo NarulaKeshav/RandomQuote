@@ -19,7 +19,9 @@ $(document).ready(function() {
             "Keep your eyes on the stars, and your feet on the ground.::Theodore Roosevelt", //12
             "The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart.::Helen Keller", //13
             "Nothing is impossible, the word itself says 'I'm possible'! ::Audrey Hepburn", //14
-            "In order to carry a positive action we must develop here a positive vision.::Dalai Lama"
+            "In order to carry a positive action we must develop here a positive vision.::Dalai Lama", //15
+            "Nyan Nyan Nyan Nyan Nyan Nyan Nyan Nyan Nyan Nyan Nyan Nyan Nyan Nyan.::Nyan Cat", //16
+            "Ring-ding-ding-ding-dingeringeding! Gering-ding-ding-ding-dingeringeding! Gering-ding-ding-ding-dingeringeding!::Fox" //17
         ];
 
         var random_quote_index = quotes[Math.floor(Math.random() * quotes.length)];
