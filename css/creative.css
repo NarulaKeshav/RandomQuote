@@ -10,10 +10,10 @@ body {
 
 /* Link CSS Properties*/
 a {
-    color: #2285BA;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    transition: all .5s;
+  color: #2285BA;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
 }
 a:hover, a:focus {
     color: #2C82B7;
@@ -21,33 +21,27 @@ a:hover, a:focus {
 }
 
 /* Text CSS Properties*/
-.text-faded {
-    color: #FFF;
-    line-height: 30px;
-    font-size: 15px;
-    font-family: Lora;
+h3 {
+  padding-top: 8px;
+  color: #331C08;
+  font-size: 25px;
+  font-family: PT Sans;
 }
-.text-faded-light {
-    color: #F0F0F0;
-    font-size: 16px;
-    padding-top: 10px;
-    font-family: Lora;
+.text-faded {
+  color: #FFF;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: Lora;
 }
 .main-heading {
   padding: 15px;
-  color: rgba(255,255,255,0.8);
+  color: #FFF;
   font-size: 50px;
   font-family: PT Sans;
+  text-shadow: 2px 3px 10px #4390C0;
 }
 
 /* Div and Section Tag CSS Properties */
-/*.bg-quote-box {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 40px 30px 40px 30px;
-  background: -webkit-linear-gradient(-60deg, #F0F0F0 0%,#F0F0F0 50%,#E8E8E8 50%,#E5E5E5 100%);
-  border-radius: 15px;
-}*/
 #cloud {
   width: 650px; 
   height: 120px;
@@ -103,7 +97,15 @@ a:hover, a:focus {
   bottom: 0;
 }
 blockquote {
-  border-color: #888;
+  border: none;
+  margin-top: -15px;
+}
+cite {
+  font-family: Lora;
+}
+.quote-p {
+  font-family: Lora;
+  color: #333;
 }
 /* Images CSS Properties*/
 .no-drag {
@@ -111,6 +113,14 @@ blockquote {
   -moz-user-select: none;
   -webkit-user-drag: none;
   cursor: crosshair;
+}
+#refresh {
+  width: 80px;
+  height: auto;
+  margin-top: 50px;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
 }
 
 /* Button CSS Property */
@@ -123,6 +133,7 @@ blockquote {
   margin-right: 5px;
   padding: 10px 15px;
   box-shadow: 0px transparent;
+  outline: none;
 }
 .btn-custom:hover {
   color: #FFF;
@@ -137,8 +148,32 @@ blockquote {
   margin-left: 5px;
   margin-right: 5px;
   box-shadow: 0px 4px 5px #408DBD;
+  outline: none;
 }
 .btn-generate:hover {
   color: #3683B3;
   box-shadow: 4px 4px 5px #408DBD;
+}
+
+/* Span CSS Properties */
+.underline {
+  color: #331C08;
+  border-bottom: 2px dotted #331C08;
+}
+.fcc {
+  border-bottom: 1px dotted #2C82B7;
+}
+.dark-blue {
+  color: #4894C3;
+}
+
+/* Modal CSS Properties */
+.modalProperty {
+  margin-top: 6em;
+  border-radius: 0px;
+  width: 100%;
+}
+.googleForm {
+  width: 100%;
+  height: 500px;
 }

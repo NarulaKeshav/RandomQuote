@@ -6,12 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Twitter Share Card Meta Tag -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@NarulaKeshav" />
+    <meta name="twitter:title" content="Random Quote Generator" />
+    <meta name="twitter:image" content="http://goo.gl/J3Dhe1" />
+    <meta name="twitter:url" content="https://narulakeshav.com/using-twitter-summary-card"/>
+
     <title>Random Quote Generator</title>
     <link rel="shortcut icon" href="public/img/icon.png"/>
 
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
     <link rel="stylesheet" href="css/creative.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
@@ -22,36 +28,64 @@
 <body>
     <section class="col-md-12" align="center">
         <h1 class="main-heading">Random Quote Generator</h1>
-        <p class="text-faded">Click 'Generate Random' button to see a random, inspiring quote.</p>
-        <div id="cloud"><div id="middle-cloud"></div></div>
-        <!-- <div class="col-md-8 col-md-offset-2 bg-quote-box" id="display-box" align="center">
-            <blockquote align="left">
-                <p class="quote-text" id="quote">
-                    Footsteps always follow us, whenever it is snowing. They always show us where we've been, but never where we're going.
-                </p>
-                <footer><cite title="author-name" id="author-name">Author Name</cite></footer>
-            </blockquote>
-        </div> -->
+        <p class="text-faded">Inspired by: 
+            <a href="www.freecodecamp.com" target="_blank"><span class="fcc">FreeCodeCamp Challenge</span></a>
+        </p>
+        <div id="cloud">
+            <div class="col-md-10 col-md-offset-1">
+                <blockquote align="left">
+                    <p class="quote-p">
+                        "<span id="quote-text"></span>"
+                    </p>
+                    <footer class="dark-blue"><cite title="author-name" id="author-name"></cite></footer>
+                </blockquote>
+            </div>
+            <div id="middle-cloud">
+                <img src="../public/img/refresh.png" id="refresh">
+            </div>
+        </div>
         <div class="col-md-8 col-md-offset-2">
-            <a href="#" class="btn btn-custom">
+            <a href="https://goo.gl/BDuhoZ" class="btn btn-custom">
                 <span class="fa fa-twitter">&nbsp;&nbsp;Share on Twitter</span>
             </a>
             <a href="#" class="btn btn-generate" id="random">
                 <span class="fa fa-random">&nbsp;&nbsp;Generate Random</span>
             </a>
-            <a href="#" class="btn btn-custom">
+            <a href="#" class="btn btn-custom" data-target="#sign" data-toggle="modal">
                 <span class="fa fa-bullhorn">&nbsp;&nbsp;Request a Quote</span>
             </a>
+            <div class="modal fade" id="sign" tabindex="-1" role="dialog" aria-labelledby="addLabel" aria-hidden="true">
+                <!-- GOOGLE FORM ID -->
+                <div class="modal-dialog modal-md">
+                    <div class="modal-content modalProperty">
+                        <iframe src="https://docs.google.com/forms/d/1arrZZ54DHq-GHqFAyF5Ybapj6QmUVguUr5qGV3Cw5yM/viewform?embedded=true" width="760" frameborder="0" marginheight="0" marginwidth="0" class="googleForm">Loading...</iframe>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="col-md-12 bg-land">
-        
+    <section class="col-md-12 bg-land" align="center">
+        <h3><span class="fa fa-github"></span>&nbsp;Created by: <a href="https://github.com/NarulaKeshav" class="underline" target="_blank">Keshav Narula</a></h3>
     </section>
 
     <!-- JavaScript Files and Plugins -->
-    <script src="public/js/creative.js"></script>
-    <script src="public/js/bootstrap.min.js"></script>
+    <script src="../public/js/jquery.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="public/js/jquery.easing.min.js"></script>
+    <script src="../public/js/jquery.easing.min.js"></script>
+    <script src="../public/js/jQueryRotate.js"></script>
+    <script src="../public/js/creative.js"></script>
+    <script src="../public/js/bootstrap.min.js"></script>
+    <script>
+        var value = 0
+        $("#random").rotate({
+          bind:
+          {
+            click: function(){
+              value +=360;
+              $('#refresh').rotate({ animateTo:value})
+            }
+          }
+        });
+    </script>
 </body>
 </html>
