@@ -43,8 +43,8 @@ h3 {
 
 /* Div and Section Tag CSS Properties */
 #cloud {
-  width: 650px; 
-  height: 120px;
+  width: 550px; 
+  height: 100px;
   background: #f2f9fe;
   background: linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
   background: -webkit-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
@@ -56,7 +56,7 @@ h3 {
   -moz-border-radius: 100px;
   position: relative;
   margin: 120px auto 20px;
-  margin-top: 230px;
+  margin-top: 200px;
 }
 #cloud:after, #cloud:before {
   content: '';
@@ -65,15 +65,15 @@ h3 {
   z-index: -1;
 }
 #cloud:after {
-  width: 200px; height: 200px;
-  top: -80px; left: 50px;
+  width: 170px; height: 170px;
+  top: -90px; left: 50px;
   border-radius: 100px;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
 }
 #cloud:before {
-  width: 180px; height: 180px;
-  top: -120px; right: 50px;
+  width: 160px; height: 160px;
+  top: -100px; right: 40px;
   border-radius: 200px;
   -webkit-border-radius: 200px;
   -moz-border-radius: 200px;
@@ -83,8 +83,8 @@ h3 {
   position: absolute;
   background: #f2f9fe;
   z-index: -1;
-  width: 300px; height: 300px;
-  top: -200px; left: 180px;
+  width: 220px; height: 220px;
+  top: -180px; left: 180px;
   border-radius: 300px;
   -webkit-border-radius: 300px;
   -moz-border-radius: 300px;
@@ -95,6 +95,7 @@ h3 {
   border-top: 15px solid #399201;
   position: absolute;
   bottom: 0;
+  width: 100%;
 }
 blockquote {
   border: none;
@@ -106,6 +107,7 @@ cite {
 .quote-p {
   font-family: Lora;
   color: #333;
+  font-size: 16px;
 }
 /* Images CSS Properties*/
 .no-drag {
@@ -176,4 +178,104 @@ cite {
 .googleForm {
   width: 100%;
   height: 500px;
+}
+
+/* Media queries for smaller devices */
+@media only screen and (max-width: 768px) {
+  #cloud {
+    width: 350px; 
+    height: 98px;
+    background: #f2f9fe;
+    background: linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+    background: -webkit-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+    background: -moz-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+    background: -ms-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+    background: -o-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    position: relative;
+    margin: 120px auto 20px;
+  }
+  #cloud:after, #cloud:before {
+    content: '';
+    position: absolute;
+    background: #f2f9fe;
+    z-index: -1;
+  }
+  #cloud:after {
+    width: 100px; height: 100px;
+    top: -50px; left: 50px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+  }
+  #cloud:before {
+    width: 90px; height: 90px;
+    top: -70px; right: 20px;
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+  }
+  #middle-cloud {
+    content: '';
+    position: absolute;
+    background: #f2f9fe;
+    z-index: -1;
+    width: 150px; height: 150px;
+    top: -120px; left: 120px;
+    border-radius: 300px;
+    -webkit-border-radius: 300px;
+    -moz-border-radius: 300px;
+  }
+  .text-faded,
+  .fcc {
+    color: transparent;
+    border: none;
+  }
+  #refresh {
+    margin-top: 30px;
+    width: 55px;
+    height: auto;
+  }
+  blockquote {
+    border: none;
+    margin-top: 0px;
+  }
+  .quote-p {
+    font-family: Lora;
+    color: #333;
+    font-size: 14px;
+  }
+  .btn-custom,
+  .btn-custom:focus {
+    margin-bottom: 10px;
+    background: -webkit-linear-gradient(-60deg, #5FADDE 0%,#5FADDE 50%,#4F9AC9 50%,#408DBD 100%);
+    border: none;
+    color: #FFF;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px 8px;
+    box-shadow: 0px transparent;
+    outline: none;
+  }
+  .btn-generate,
+  .btn-generate:focus {
+    margin-bottom: 10px;
+    padding: 8px 8px;
+    background: -webkit-linear-gradient(-60deg, #FFF 0%,#FFF 50%,#F0F0F0 50%,#E5E5E5 100%);
+    color: #4F9AC9;
+    border: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: 0px 4px 5px #408DBD;
+    outline: none;
+  }
+  .main-heading {
+    padding: 15px;
+    color: #FFF;
+    font-size: 30px;
+    font-family: PT Sans;
+    text-shadow: 2px 3px 10px #4390C0;
+  }
 }
