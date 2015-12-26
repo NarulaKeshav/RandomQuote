@@ -29,6 +29,6 @@ $(document).ready(function() {
     }
 
     $('#random').click(function() {
-        rotate();
+        generate();
     });
 });
