@@ -33,6 +33,7 @@ $(document).ready(function() {
         $("#author-name").html(split_to_get_author[1]);
     }
 
+    //Generates a random quote on click on "random" button
     $('#random').click(function() {
         generate();
     });
